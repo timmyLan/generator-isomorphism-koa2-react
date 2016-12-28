@@ -1,0 +1,9 @@
+{
+  "name": "generator-isomorphism-koa2-react",
+  "version": "1.0.0",
+  "description": "generator-isomorphism-koa2-react",
+  "main": "index.js",
+  "repository": "https://github.com/timmyLan/generator-isomorphism-koa2-react.git",
+  "author": "llan",
+  "license": "MIT"
+}
