@@ -10,7 +10,8 @@
     "generators"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "isomorphism-koa2-react"
   ],
   "dependencies": {
     "yeoman-generator": "^1.0.1"
