@@ -21,7 +21,6 @@ module.exports = class extends Generator {
                 type: 'input',
                 name: 'description',
                 message: 'What\'s the Project description',
-                default: 'my description',
                 store: true
             }, {
                 type: 'input',
@@ -33,7 +32,6 @@ module.exports = class extends Generator {
                 type: 'input',
                 name: 'author',
                 message: 'What\'s your name',
-                default: 'llan',
                 store: true
             }
         ]);
