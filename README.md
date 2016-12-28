@@ -1,6 +1,6 @@
 generator-isomorphism-koa2-react
 ===
-![https://www.npmjs.com/package/generator-isomorphism-koa2-react](https://img.shields.io/badge/npm-v1.0.0-blue.svg)
+[![npm](https://img.shields.io/badge/npm-v1.0.1-blue.svg)](https://www.npmjs.com/package/generator-isomorphism-koa2-react)
 
 introduce
 ---
