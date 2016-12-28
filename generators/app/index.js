@@ -41,9 +41,17 @@ module.exports = class extends Generator {
 
     writing() {
         const promptValues = this.config.get('promptValues');
-        this.fs.copyTpl(
+        this.fs.copy(
             this.templatePath('**'),
-            this.destinationPath('./'),
+            this.destinationRoot()
+        );
+        this.fs.copy(
+            this.templatePath('.*'),
+            this.destinationRoot()
+        );
+        this.fs.copyTpl(
+            this.templatePath('package.json'),
+            this.destinationPath('./package.json'),
             {
                 name: promptValues.name,
                 author: promptValues.author,
@@ -55,6 +63,9 @@ module.exports = class extends Generator {
     }
 
     end() {
-        this.yarnInstall();
+        this.log('all copy has been completed, now run yarn install ...');
+        this.yarnInstall([],{},()=>{
+            this.log(`${this.config.get('promptValues').name} has been completed, now you can run npm start to start this project.`);
+        });
     }
 };
